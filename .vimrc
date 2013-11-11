@@ -60,9 +60,9 @@ set nowrap                      " do not wrap lines
 set ruler                       " show the cursor position all the time
 set showcmd                     " display incomplete commands
 set smartindent                 " smart autoindenting when starting a new line
-set tabstop=8                   " number of spaces that a <Tab> counts for
-set shiftwidth=8                " number of spaces to use for each step of indent
-set softtabstop=8
+set tabstop=4                   " number of spaces that a <Tab> counts for
+set shiftwidth=4                " number of spaces to use for each step of indent
+set softtabstop=4
 set smarttab                    " inserts blanks according to 'shiftwidth'
 set expandtab                   " spaces instead of tabs
 set visualbell                  " visual bell instead of beeping

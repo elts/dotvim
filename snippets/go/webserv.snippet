@@ -1,0 +1,6 @@
+	//router with gorilla/mux
+    r := mux.NewRouter()
+    r.HandleFunc("/", rootHandler)
+    http.Handle("/", r)
+    log.Printf("| Serving: %s\n", ":9090")
+    http.ListenAndServe(":9090", nil)

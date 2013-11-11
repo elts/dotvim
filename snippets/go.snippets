@@ -1,0 +1,25 @@
+snippet for
+	for ${1:i}, ${2:v} := range ${3:a} {
+		
+	}
+snippet fmtp
+	fmt.Printf("${1}")
+snippet logp
+	log.Printf("${1}")
+snippet args
+	myname := os.Args[0] //This is my name
+	if len(os.Args)<2 {
+		fmt.Printf("Usage: %s ...\n", myname)
+		return
+	}
+snippet iferr
+	if err != nil {
+		log.Printf("%v\n", err)
+	} 
+snippet herr
+	// To Handle errors
+	func handleError(err error) {
+		if err != nil {
+			log.Fatal(err)
+		}
+	}

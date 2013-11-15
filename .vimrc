@@ -23,6 +23,8 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'powerman/vim-plugin-viewdoc'
 Bundle 'freitass/todo.txt-vim'
+" Bundle 'godlygeek/tabular'
+" Bundle 'jngeist/vim-multimarkdown'
 Bundle 'othree/javascript-libraries-syntax.vim'
 
 " vim-scripts repos
@@ -97,6 +99,7 @@ nnoremap <silent> <C-p> :tabprevious<CR>
 nnoremap <silent> <C-t> :tabnew<CR>
 
 " NERDTreeToggle
+let g:nerdtree_tabs_open_on_gui_startup=0
 map        <Leader>n     :NERDTreeTabsToggle<CR>
 
 " NERDTree

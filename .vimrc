@@ -89,6 +89,7 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 "
 " Open And Close Go Files
 au BufRead,BufNewFile *.go set list noexpandtab syntax=go listchars=tab:\|\ ,trail:-
+let g:gofmt_command = 'goimports'
 au BufWritePre *.go Fmt
 
 " Tabs

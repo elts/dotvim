@@ -1,9 +1,6 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-" Go Official Plugins for vim
-set runtimepath+=$GOROOT/misc/vim
-
 " Vundle Config
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -26,6 +23,8 @@ Bundle 'freitass/todo.txt-vim'
 " Bundle 'godlygeek/tabular'
 " Bundle 'jngeist/vim-multimarkdown'
 Bundle 'othree/javascript-libraries-syntax.vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'fatih/vim-go'
 
 " vim-scripts repos
 Bundle 'Limbo-syntax'
@@ -88,9 +87,10 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " vim/update.sh
 "
 " Open And Close Go Files
-au BufRead,BufNewFile *.go set list noexpandtab syntax=go listchars=tab:\|\ ,trail:-
-let g:gofmt_command = 'goimports'
-au BufWritePre *.go Fmt
+"au BufRead,BufNewFile *.go set list noexpandtab syntax=go listchars=tab:\|\ ,trail:-
+"let g:gofmt_command = 'goimports'
+let g:go_fmt_command = "goimports"
+"au BufWritePre *.go Fmt
 
 " Tabs
 set showtabline=2

@@ -24,6 +24,7 @@ Bundle 'freitass/todo.txt-vim'
 " Bundle 'jngeist/vim-multimarkdown'
 Bundle 'othree/javascript-libraries-syntax.vim'
 Plugin 'morhetz/gruvbox'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'fatih/vim-go'
 
 " vim-scripts repos

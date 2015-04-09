@@ -12,4 +12,9 @@ then
     echo "Making a symlink to .vimrc"
     ln -s .vim/.vimrc .vimrc
 fi
+if [ ! -f ~/.gvimrc ]
+then
+    echo "Making a symlink to .gvimrc"
+    ln -s .vim/.gvimrc .gvimrc
+fi
 vim +BundleInstall +qall

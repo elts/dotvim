@@ -26,6 +26,7 @@ Bundle 'othree/javascript-libraries-syntax.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'fatih/vim-go'
+Plugin 'vim-scripts/Conque-GDB'
 
 " vim-scripts repos
 Bundle 'Limbo-syntax'
@@ -70,6 +71,7 @@ set expandtab                   " spaces instead of tabs
 set visualbell                  " visual bell instead of beeping
 set wildmenu                    " command-line completion in an enhanced mode
 let mapleader = ","
+set rnu                         " turning on relative line numbering
 "set nu                         " turning on line numbering
 " inoremap  ,  ,<Space>         " comma always followed by a space
 
@@ -113,3 +115,5 @@ imap   <C-a>    <Esc>:NERDTree<CR>
 let asmsyntax='armasm'
 let filetype_inc='armasm'
 
+" Custom commands
+command -nargs=* Run ConqueTerm <args>

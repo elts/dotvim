@@ -21,7 +21,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'powerman/vim-plugin-viewdoc'
 Bundle 'freitass/todo.txt-vim'
 " Bundle 'godlygeek/tabular'
-" Bundle 'jngeist/vim-multimarkdown'
+Bundle 'jngeist/vim-multimarkdown'
 Bundle 'othree/javascript-libraries-syntax.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
@@ -120,3 +120,7 @@ let filetype_inc='armasm'
 
 " Custom commands
 command -nargs=* Run ConqueTerm <args>
+
+" theme
+set background=dark    " Setting dark mode
+colorscheme gruvbox

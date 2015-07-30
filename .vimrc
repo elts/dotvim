@@ -12,24 +12,33 @@ Bundle 'gmarik/vundle'
 " Bundles here:
 "
 " original repos on GitHub
+"" Syntax checking plugin
 Bundle 'scrooloose/syntastic'
+"" NerdTree & NerdTree Support for tabs
 Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'jistr/vim-nerdtree-tabs' 
+"" SnipMate is a snippet plugin, plus its deps
+Bundle 'MarcWeber/vim-addon-mw-utils' 
 Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'powerman/vim-plugin-viewdoc'
+Bundle 'garbas/vim-snipmate' 
+"" Flexible viewer for any documentation source
+" Bundle 'powerman/vim-plugin-viewdoc'
+"" Todo.txt plugin
 Bundle 'freitass/todo.txt-vim'
-" Bundle 'godlygeek/tabular'
-Bundle 'jngeist/vim-multimarkdown'
-Bundle 'othree/javascript-libraries-syntax.vim'
-Plugin 'morhetz/gruvbox'
+"" Easy allign text
+Bundle 'godlygeek/tabular'
+""  MarkDown plugin
+Bundle 'jngeist/vim-multimarkdown' 
+"" JavaScript Syntax
+" Bundle 'othree/javascript-libraries-syntax.vim'
+"" An autocompletion daemon for the Golang, Golang support plugins
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
-Plugin 'fatih/vim-go'
-Plugin 'vim-scripts/Conque-GDB'
+Plugin 'fatih/vim-go' 
+"" Retro groove color scheme for Vim
+Plugin 'morhetz/gruvbox' 
 
 " vim-scripts repos
-Bundle 'Limbo-syntax'
+" Bundle 'Limbo-syntax'
 
 " non-GitHub repos
 " Bundle 'git://git.wincent.com/command-t.git'
@@ -51,6 +60,7 @@ Bundle 'Limbo-syntax'
 " Main Configuration """
 "
 filetype plugin indent on	" required!
+let mapleader = ","
 set omnifunc=syntaxcomplete#Complete
 syntax on
 set mouse=a
@@ -70,7 +80,6 @@ set smarttab                    " inserts blanks according to 'shiftwidth'
 set expandtab                   " spaces instead of tabs
 set visualbell                  " visual bell instead of beeping
 set wildmenu                    " command-line completion in an enhanced mode
-let mapleader = ","
 set rnu                         " turning on relative line numbering
 "set nu                         " turning on line numbering
 " inoremap  ,  ,<Space>         " comma always followed by a space

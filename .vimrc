@@ -111,9 +111,6 @@ nnoremap <silent> <C-n> :tabnext<CR>
 nnoremap <silent> <C-p> :tabprevious<CR>
 nnoremap <silent> <C-t> :tabnew<CR>
 
-" ConqueGDB
-let g:ConqueGdb_Leader = "\\"
-
 " NERDTreeToggle
 let g:nerdtree_tabs_open_on_gui_startup=0
 map        <Leader>n     :NERDTreeTabsToggle<CR>
@@ -126,9 +123,6 @@ imap   <C-a>    <Esc>:NERDTree<CR>
 " Arm Asm Syntax
 let asmsyntax='armasm'
 let filetype_inc='armasm'
-
-" Custom commands
-command -nargs=* Run ConqueTerm <args>
 
 " theme
 set background=dark    " Setting dark mode

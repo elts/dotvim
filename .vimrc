@@ -61,6 +61,7 @@ Plugin 'morhetz/gruvbox'
 "
 filetype plugin indent on	" required!
 let mapleader = ","
+let maplocalleader = ","
 set omnifunc=syntaxcomplete#Complete
 syntax on
 set mouse=a

@@ -36,6 +36,8 @@ Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'fatih/vim-go' 
 "" Retro groove color scheme for Vim
 Plugin 'morhetz/gruvbox' 
+"" No Syntax 
+Plugin 'robertmeta/nofrils' 
 
 " vim-scripts repos
 " Bundle 'Limbo-syntax'
@@ -62,7 +64,7 @@ Plugin 'morhetz/gruvbox'
 filetype plugin indent on	" required!
 let mapleader = ","
 let maplocalleader = ","
-set omnifunc=syntaxcomplete#Complete
+" set omnifunc=syntaxcomplete#Complete
 syntax on
 set mouse=a
 set autoindent                  " copy indent from current line
@@ -83,7 +85,7 @@ set visualbell                  " visual bell instead of beeping
 set wildmenu                    " command-line completion in an enhanced mode
 set rnu                         " turning on relative line numbering
 "set nu                         " turning on line numbering
-" inoremap  ,  ,<Space>         " comma always followed by a space
+"inoremap  ,  ,<Space>         " comma always followed by a space
 
 " Omni-Completion Settings
 inoremap <C-x> <C-x><C-o>
@@ -127,4 +129,5 @@ let filetype_inc='armasm'
 
 " theme
 set background=dark    " Setting dark mode
-colorscheme gruvbox
+" silent! colorscheme gruvbox
+silent! colorscheme nofrils-dark

@@ -1,5 +1,7 @@
 set background=dark    " Setting dark mode
-colorscheme gruvbox
+" silent! colorscheme gruvbox
+" silent! colorscheme nofrils-light
+silent! colorscheme nofrils-sepia
 
 " guioptions ('go' for short)
 " set guioptions-=m  "remove menu bar
